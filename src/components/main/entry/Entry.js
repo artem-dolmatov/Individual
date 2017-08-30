@@ -29,7 +29,7 @@ class Entry extends Component {
   handleSubmit(event){
     event.preventDefault()
 
-    fetch('http://151.248.118.213:3001/Form', {
+    fetch('http://151.248.118.213:3001/entryForm', {
       method: 'POST',
       entrys: {
         'Accept': 'application/json',
