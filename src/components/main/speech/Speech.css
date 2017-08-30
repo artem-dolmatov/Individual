@@ -1,0 +1,19 @@
+.speechBlock {
+  padding: 5% 5% 4% 25%;
+  display: inline-block;
+}
+.speechImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.speechP {
+  font-size: 20px;
+  margin-top: 0;
+}
+.speechGay {
+  font-size: 15px;
+}
+.speechDiv {
+  float: left;
+}

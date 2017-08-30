@@ -1,0 +1,32 @@
+.footerBg {
+  background-image: url(../../../images/2gis.png);
+}
+.footerShadow {
+  text-align: center;
+  background: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 0.2) 100%);
+}
+.footerH2 {
+  color: #a0282f;
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: 5%;
+}
+.footerPhoneDiv {
+  display: inline-block;
+  margin-top: 1%;
+}
+.footerPhoneImg {
+  float: left;
+}
+.footerPhoneNumber {
+  float: left;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
+.footerMarginP {
+  margin-top: 3%;
+}
+.footerCop {
+  font-size: 15px;
+}

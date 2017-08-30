@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+  .appBarPhone {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    position: fixed;
+    right: 2%;
+  }
+}
+@media (max-width: 767px) {
+  .appBarPhone {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+  }
+  .appBarPhoneSpan {
+    display: none;
+  }
+}
+.appBarRoot {
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+}
+.appBarToolbar {
+  min-height: 50px;
+}

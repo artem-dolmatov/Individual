@@ -1,0 +1,23 @@
+.advantageH2 {
+  text-align: center;
+  width: 100%;
+}
+.advantageH3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+.advantageDiv {
+  margin: 8% 5% 5% 5%;
+}
+.advantageIcons {
+  height: 45px;
+}
+.advantageDivFloat {
+  float: left;
+  margin-right: 2%;
+}
+@media (min-width: 768px){
+  .advantageGrid {
+    margin-bottom: 5%;
+  }
+}

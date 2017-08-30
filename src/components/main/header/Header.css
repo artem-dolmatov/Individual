@@ -1,0 +1,62 @@
+.header {
+  background-image: url(../../../images/headerBg.jpeg);
+  margin-top: 50px;
+}
+.headerShadow {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.10));
+}
+.headerText {
+  margin: 12% 0% 20% 10%;
+}
+.headerH1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+}
+.headerP {
+  color: white;
+  font-size: 20px;
+}
+.headerFormName {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+.headerFormLabel {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+.headerFormInput {
+  width: 100%;
+  height: 30px;
+  font-size: 21px;
+  margin-bottom: 2%;
+}
+.headerFormDivButton {
+  text-align: center;
+  margin-top: 5%;
+}
+.headerFormMargin {
+  margin: 5% 7% 5% 7%;
+}
+.headerForm {
+  margin: 5%;
+  background: rgba(237, 238, 240, 0.85);
+  border: 1px solid;
+}
+@media (min-width: 768px) {
+  .header {
+    background-size: 100%;
+  }
+  .headerForm {
+    margin: 14% 20% 5% 10%;
+    background: rgba(237, 238, 240, 0.85);
+    border: 1px solid;
+  }
+}
+.Snackbar {
+  top: 0;
+  height: 20%;
+  width: 170%;
+}

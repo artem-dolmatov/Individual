@@ -1,0 +1,43 @@
+.reviewsBg {
+  background: #edeef0;
+}
+.reviewsH2 {
+  text-align: center;
+  width: 100%;
+}
+.reviewsVkDiv {
+  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+  background: #fff;
+  margin: 1% 1% 1% 2%;
+}
+.reviewsVkHeader {
+  padding: 15px 20px 0;
+}
+.reviewsVkImg {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 2%;
+}
+.reviewsVkName {
+  color: #2a5885;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.reviewsVkText {
+  font-size: 13px;
+  padding: 8px 20px 19px;
+}
+.reviewsVkDate {
+  font-size: 12.5px;
+  color: #939393;
+  margin-top: 0;
+}
+.reviewsA {
+  text-decoration: none;
+}
+.reviewsA:hover {
+  text-decoration: underline;
+}

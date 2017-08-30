@@ -1,0 +1,42 @@
+.entryBg {
+  background: #edeef0;
+}
+.entryH2 {
+  color: #a0282f;
+  text-align: center;
+  width: 100%;
+  font-size: 23px;  
+}
+.entryH2Text {
+  margin-bottom: 0;
+}
+.entryForm {
+  background: #fff;
+  margin: 0 5% 5% 5%;
+  box-shadow: 0 5px 25px 0 rgba(102,102,153,.15);
+}
+.entryFormName {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 0;
+  padding-top: 2%;
+}
+.entryFormDivButton {
+  text-align: center;
+  margin-top: 5%;
+}
+.entryFormMargin {
+  margin: 5% 7% 5% 7%;
+}
+.entryFormInput {
+  width: 48%;
+  height: 30px;
+  font-size: 21px;
+  margin-bottom: 2%;
+  margin-left: 1%;
+}
+.entryFormDivButton {
+  text-align: center;
+  margin-top: 5%;
+  padding-bottom: 5%;
+}
