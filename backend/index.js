@@ -42,8 +42,8 @@ app.post('/entryForm', function(req, res) {
     from: 'tmn-drivingschool.ru <postmaster@sandboxc1a42f17212546f1b27b27d149b04546.mailgun.org>',
     to: 'tmn-as72@yandex.ru',
     subject: 'Заявка из цены',
-    html: "Имя: "+req.body.name+"<br />"+
-    "Номер телефона: "+req.body.phone
+    html: "Имя: "+req.body.name2+"<br />"+
+    "Номер телефона: "+req.body.phone2
   };
 
   mailgun.messages().send(data, function (error, body) {

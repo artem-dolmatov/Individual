@@ -10,18 +10,18 @@ class Entry extends Component {
   constructor(props){
     super(props);
     this.state = {
-      name: '',
-      phone: '',
+      name2: '',
+      phone2: '',
       open: false,
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleChangeName(e){
-    this.setState({name: e.target.value});
+    this.setState({name2: e.target.value});
   }
   handleChangePhone(e){
-    this.setState({phone: e.target.value});
+    this.setState({phone2: e.target.value});
   }
   handleRequestClose = () => {
     this.setState({ open: false });
@@ -36,8 +36,8 @@ class Entry extends Component {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        name: this.state.name,
-        phone: this.state.phone
+        name2: this.state.name2,
+        phone2: this.state.phone2
       })
     })
     .then((response) => response.json())
@@ -50,7 +50,7 @@ class Entry extends Component {
     .catch((error) => {
       console.error(error);
     });
-    this.setState({name: '', phone: ''});
+    this.setState({name2: '', phone2: ''});
     this.setState({ open: true });
   }
   render() {
@@ -67,7 +67,7 @@ class Entry extends Component {
                   className='entryFormInput'
                   type='text'
                   required
-                  value={this.state.name}
+                  value={this.state.name2}
                   placeholder='Введите имя'
                   onChange={this.handleChangeName.bind(this)}
                 />
@@ -75,7 +75,7 @@ class Entry extends Component {
                   className='entryFormInput'
                   type='text'
                   required
-                  value={this.state.phone}
+                  value={this.state.phone2}
                   mask="+7 (999) 999-99-99"
                   placeholder='+7 (___) ___-__-__'
                   onChange={this.handleChangePhone.bind(this)}
