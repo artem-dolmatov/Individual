@@ -10,18 +10,18 @@ class Entry extends Component {
   constructor(props){
     super(props);
     this.state = {
-      name2: '',
-      phone2: '',
+      name: '',
+      phone: '',
       open: false,
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleChangeName(e){
-    this.setState({name2: e.target.value});
+    this.setState({name: e.target.value});
   }
   handleChangePhone(e){
-    this.setState({phone2: e.target.value});
+    this.setState({phone: e.target.value});
   }
   handleRequestClose = () => {
     this.setState({ open: false });
@@ -29,15 +29,15 @@ class Entry extends Component {
   handleSubmit(event){
     event.preventDefault()
 
-    fetch('http://151.248.118.213:3001/entryForm', {
+    fetch('http://151.248.118.213:3001/Form', {
       method: 'POST',
       entrys: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        name2: this.state.name2,
-        phone2: this.state.phone2
+        name: this.state.name,
+        phone: this.state.phone
       })
     })
     .then((response) => response.json())
@@ -50,7 +50,7 @@ class Entry extends Component {
     .catch((error) => {
       console.error(error);
     });
-    this.setState({name2: '', phone2: ''});
+    this.setState({name: '', phone: ''});
     this.setState({ open: true });
   }
   render() {
@@ -67,7 +67,7 @@ class Entry extends Component {
                   className='entryFormInput'
                   type='text'
                   required
-                  value={this.state.name2}
+                  value={this.state.name}
                   placeholder='Введите имя'
                   onChange={this.handleChangeName.bind(this)}
                 />
@@ -75,7 +75,7 @@ class Entry extends Component {
                   className='entryFormInput'
                   type='text'
                   required
-                  value={this.state.phone2}
+                  value={this.state.phone}
                   mask="+7 (999) 999-99-99"
                   placeholder='+7 (___) ___-__-__'
                   onChange={this.handleChangePhone.bind(this)}
