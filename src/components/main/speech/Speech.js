@@ -13,7 +13,7 @@ class Speech extends Component {
                   <img className='speechImg' src='https://pp.userapi.com/c638216/v638216645/68f62/Gd4TgbxGm_I.jpg' alt='Maxim'/>
                 </a>
               </div>
-              <div className='speechDiv'>
+              <div className='speechDiv2'>
                 <p className='speechP'>&nbsp; &nbsp;Я уверен в результате</p>
                 <p className='speechP'>&nbsp; &nbsp;Если Вы не сдадите экзамен после моего курса</p>
                 <p className='speechP'>&nbsp; &nbsp;Мы запишем Вас на него еще раз совершенно бесплатно</p>

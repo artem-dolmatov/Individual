@@ -13,7 +13,7 @@ class Advantage extends Component {
         <div className='advantageH2'>
           <h2>Преимущества</h2>
         </div>
-        <Grid item sm={6}>
+        <Grid item sm={6} xs={12}>
           <div className='advantageDiv'>
             <div className='advantageDivFloat'>
               <img src={AvTimer} className='advantageIcons'/>
@@ -23,7 +23,7 @@ class Advantage extends Component {
             </div>
           </div>
         </Grid>
-        <Grid item sm={6}>
+        <Grid item sm={6} xs={12}>
           <div className='advantageDiv'>
             <div className='advantageDivFloat'>
               <img src={Home} className='advantageIcons'/>
@@ -33,7 +33,7 @@ class Advantage extends Component {
             </div>
           </div>
         </Grid>
-        <Grid item sm={6}>
+        <Grid item sm={6} xs={12}>
           <div className='advantageDiv'>
             <div className='advantageDivFloat'>
               <img src={GiftCard} className='advantageIcons'/>
@@ -43,7 +43,7 @@ class Advantage extends Component {
             </div>
           </div>
         </Grid>
-        <Grid item sm={6}>
+        <Grid item sm={6} xs={12}>
           <div className='advantageDiv'>
             <div className='advantageDivFloat'>
               <img src={WorkGroup} className='advantageIcons'/>

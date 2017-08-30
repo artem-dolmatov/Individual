@@ -12,15 +12,13 @@ import Entry from './entry/Entry';
 class Main extends Component {
   render() {
     return(
-      <div>
-        <Grid container spacing={0}>
-          <Header />
-          <Advantage />
-          <Reviews />
-          <Speech />
-          <Footer />
-        </Grid>
-      </div>
+      <Grid container spacing={0}>
+        <Header />
+        <Advantage />
+        <Reviews />
+        <Speech />
+        <Footer />
+      </Grid>
     );
   }
 }

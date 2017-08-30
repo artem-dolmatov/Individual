@@ -9,7 +9,7 @@ class Reviews extends Component {
           <div className='reviewsH2'>
             <h2>Отзывы</h2>
           </div>
-          <Grid item sm={6}>
+          <Grid item sm={6} xs={12}>
             <div className='reviewsVkDiv'>
               <div className='reviewsVkHeader'>
                 <a href='https://vk.com/id66589131'>
@@ -42,7 +42,7 @@ class Reviews extends Component {
 Прекрасная автошкола , всем рекомендую !!!</p>
             </div>
           </Grid>
-          <Grid item sm={6}>
+          <Grid item sm={6} xs={12}>
             <div className='reviewsVkDiv'>
               <div className='reviewsVkHeader'>
                 <a href='https://vk.com/kseniya_h89'>

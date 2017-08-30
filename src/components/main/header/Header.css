@@ -55,6 +55,11 @@
     border: 1px solid;
   }
 }
+@media (max-width: 767px) {
+  .headerText {
+    margin: 12% 0 7% 5%
+  }
+}
 .Snackbar {
   top: 0;
   height: 20%;
