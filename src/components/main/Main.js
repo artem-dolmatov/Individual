@@ -18,7 +18,6 @@ class Main extends Component {
           <Advantage />
           <Reviews />
           <Speech />
-          <Entry />
           <Footer />
         </Grid>
       </div>
