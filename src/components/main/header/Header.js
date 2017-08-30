@@ -29,7 +29,7 @@ class Header extends Component {
   handleSubmit(event){
     event.preventDefault()
 
-    fetch('http://localhost:3001/headerForm', {
+    fetch('http://151.248.118.213:3001/headerForm', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
