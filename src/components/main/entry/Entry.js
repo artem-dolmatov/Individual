@@ -57,7 +57,7 @@ class Entry extends Component {
     return (
         <Grid container spacing={0} className='entryBg'>
           <div className='entryH2'>
-            <h2 className='entryH2Text'>Стоимость обучение составялет - 30 000 рублей</h2>
+            <h2 className='entryH2Text'>Стоимость обучения составялет - 30 000 рублей</h2>
           </div>
           <Grid item sm={6}>
             <div className='entryForm'>
