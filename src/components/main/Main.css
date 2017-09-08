@@ -1,0 +1,10 @@
+.buttonUp {
+  position: fixed;
+  bottom: 10%;
+  right: 2%
+}
+@media(max-width: 767px) {
+  .buttonUp {
+    display: none
+  }
+}

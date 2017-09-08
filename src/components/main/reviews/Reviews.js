@@ -5,7 +5,7 @@ import './Reviews.css';
 class Reviews extends Component {
   render() {
     return (
-        <Grid container spacing={0} className='reviewsBg'>
+        <Grid container spacing={0} className='reviewsBg' id='reviews'>
           <div className='reviewsH2'>
             <h2>Отзывы</h2>
           </div>

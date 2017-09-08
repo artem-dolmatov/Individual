@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Grid from 'material-ui/Grid';
+import Button from 'material-ui/Button';
+import ExpandLess from 'material-ui-icons/ExpandLess';
 import './Main.css';
 
 import Header from './header/Header';
@@ -8,6 +10,7 @@ import Speech from './speech/Speech';
 import Reviews from './reviews/Reviews';
 import Advantage from './advantage/Advantage';
 import Entry from './entry/Entry';
+import Addresses from './addresses/Addresses';
 
 class Main extends Component {
   render() {
@@ -17,7 +20,16 @@ class Main extends Component {
         <Advantage />
         <Reviews />
         <Speech />
+        <Entry />
+        <Addresses />
         <Footer />
+        <div className='buttonUp'>
+          <a href='#main'>
+            <Button fab>
+              <ExpandLess />
+            </Button>
+          </a>
+        </div>
       </Grid>
     );
   }

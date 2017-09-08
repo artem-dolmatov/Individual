@@ -1,21 +1,20 @@
 .header {
-  background-image: url(../../../images/headerBg.jpeg);
-  margin-top: 50px;
-}
-.headerShadow {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.10));
+  background: linear-gradient(90deg, rgb(173, 173, 173) 10%, rgba(173, 173, 173, 0.58) 50%, rgba(173, 173, 173, 0.36) 80%);
 }
 .headerText {
-  margin: 12% 0% 20% 10%;
+  text-align: center;
+}
+.headerPhoto {
+  width: 70%;
+  bottom: -4px;
+  margin-left: 20%;
+  margin-top: 10%;
+  position: relative;
 }
 .headerH1 {
-  color: white;
-  font-size: 40px;
-  font-weight: 400;
-}
-.headerP {
-  color: white;
-  font-size: 20px;
+  font-size: 45px;
+  font-weight: 300;
+  margin-top: 14%;
 }
 .headerFormName {
   text-align: center;
@@ -50,7 +49,7 @@
     background-size: 100%;
   }
   .headerForm {
-    margin: 14% 20% 5% 10%;
+    margin: 5% 15% 5% 15%;
     background: rgba(237, 238, 240, 0.85);
     border: 1px solid;
   }
@@ -58,6 +57,9 @@
 @media (max-width: 767px) {
   .headerText {
     margin: 12% 0 7% 5%
+  }
+  .headerPhoto {
+    display: none;
   }
 }
 .Snackbar {

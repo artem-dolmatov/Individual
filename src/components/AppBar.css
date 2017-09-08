@@ -1,16 +1,16 @@
 @media (min-width: 768px) {
   .appBarPhone {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 22px;
-    position: fixed;
     right: 2%;
+    position: absolute;
   }
 }
 @media (max-width: 767px) {
   .appBarPhone {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 25px;
     width: 100%;
     text-align: center;
@@ -18,12 +18,27 @@
   .appBarPhoneSpan {
     display: none;
   }
+  .appDiv {
+    display: none;
+  }
 }
 .appBarRoot {
-  position: fixed;
   width: 100%;
   z-index: 2000;
 }
 .appBarToolbar {
   min-height: 50px;
+}
+.appBar {
+  background: linear-gradient(90deg, rgb(173, 173, 173) 10%, rgb(208, 208, 208) 50%, rgb(225, 225, 225) 80%);
+}
+.appDiv {
+  margin-left: 7%;
+}
+.appA {
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 19px;
 }

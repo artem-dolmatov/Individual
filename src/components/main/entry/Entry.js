@@ -10,18 +10,18 @@ class Entry extends Component {
   constructor(props){
     super(props);
     this.state = {
-      name: '',
-      phone: '',
+      nameEntry: '',
+      phoneEntry: '',
       open: false,
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleChangeName(e){
-    this.setState({name: e.target.value});
+    this.setState({nameEntry: e.target.value});
   }
   handleChangePhone(e){
-    this.setState({phone: e.target.value});
+    this.setState({phoneEntry: e.target.value});
   }
   handleRequestClose = () => {
     this.setState({ open: false });
@@ -29,37 +29,37 @@ class Entry extends Component {
   handleSubmit(event){
     event.preventDefault()
 
-    fetch('http://151.248.118.213:3001/Form', {
+    fetch('http://151.248.118.213:3001/FormEntry', {
       method: 'POST',
-      entrys: {
+      headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        name: this.state.name,
-        phone: this.state.phone
+        nameEntry: this.state.nameEntry,
+        phoneEntry: this.state.phoneEntry
       })
     })
     .then((response) => response.json())
     .then((responseJson) => {
       if (responseJson.success) {
-        this.setState({formSent: true })
+        this.setState({formSent: true });
       }
       else this.setState({formSent: false })
     })
     .catch((error) => {
       console.error(error);
     });
-    this.setState({name: '', phone: ''});
+    this.setState({nameEntry: '', phoneEntry: ''});
     this.setState({ open: true });
   }
   render() {
     return (
-        <Grid container spacing={0} className='entryBg'>
-          <div className='entryH2'>
-            <h2 className='entryH2Text'>Стоимость обучения составялет - 30 000 рублей</h2>
-          </div>
-          <Grid item sm={6}>
+        <Grid container spacing={0} className='entryBg' id='entry'>          
+          <Grid item sm={8} xs={12}>
+            <div className='entryH2'>
+              <h2 className='entryH2Text'>Стоимость обучения составляет - 30 000 рублей</h2>
+            </div>
             <div className='entryForm'>
               <p className='entryFormName'>Запишись на обучение</p>
               <form className='entryFormMargin' onSubmit={this.handleSubmit}>
@@ -67,7 +67,7 @@ class Entry extends Component {
                   className='entryFormInput'
                   type='text'
                   required
-                  value={this.state.name}
+                  value={this.state.nameEntry}
                   placeholder='Введите имя'
                   onChange={this.handleChangeName.bind(this)}
                 />
@@ -75,7 +75,7 @@ class Entry extends Component {
                   className='entryFormInput'
                   type='text'
                   required
-                  value={this.state.phone}
+                  value={this.state.phoneEntry}
                   mask="+7 (999) 999-99-99"
                   placeholder='+7 (___) ___-__-__'
                   onChange={this.handleChangePhone.bind(this)}
@@ -101,8 +101,10 @@ class Entry extends Component {
               </form>
             </div>
           </Grid>
-          <Grid item sm={6}>
-
+          <Grid item sm={4} xs={12}>
+            <div className='entryVK'>
+              <div id="vk_groups"></div>
+            </div>
           </Grid>
         </Grid>
     );

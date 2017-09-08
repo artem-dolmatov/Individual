@@ -5771,6 +5771,10 @@ react-transition-group@^2.2.0:
     prop-types "^15.5.8"
     warning "^3.0.0"
 
+react-yandex-metrika@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/react-yandex-metrika/-/react-yandex-metrika-2.2.0.tgz#5feed2ead208104391592f69768436623bf1b9f8"
+
 "react@^15 || ^16", react@^15.5.4, react@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react/-/react-15.6.1.tgz#baa8434ec6780bde997cdc380b79cd33b96393df"

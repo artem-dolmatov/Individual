@@ -5,6 +5,7 @@ import Snackbar from 'material-ui/Snackbar';
 import Fade from 'material-ui/transitions/Fade';
 import InputMask from 'react-input-mask';
 import './Header.css';
+import Photo from '../../../images/Photo.png';
 
 class Header extends Component {
   constructor(props){
@@ -56,18 +57,14 @@ class Header extends Component {
   render() {
     return(
       <Grid container spacing={0} className='header'>
-        <Grid container spacing={0} className='headerShadow'>
+        <Grid container spacing={0}>
           <Grid item xs={12} sm={6}>
-            <div className='headerText'>
-              <h1 className='headerH1'>Индивидуальное обучение в автошколе Формула</h1>
-              <p className='headerP'>- ускоренная программа</p>
-              <p className='headerP'>- индивидуальное расписание</p>
-              <p className='headerP'>- неограниченное количество теоретических занятий</p>
-            </div>
+            <img src={Photo} className='headerPhoto'/>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6} className='headerText'>
+            <h1 className='headerH1'>Индивидуальное обучение в автошколе</h1>
             <div className='headerForm'>
-              <p className='headerFormName'>Оставьте заявку на обучение</p>
+              <p className='headerFormName'>Оставьте заявку</p>
               <form className='headerFormMargin' onSubmit={this.handleSubmit}>
                 <label className='headerFormLabel'>Имя</label>
                 <input

@@ -9,7 +9,7 @@ import './Advantage.css';
 class Advantage extends Component {
   render() {
     return (
-      <Grid container spacing={0} className='advantageGrid'>
+      <Grid container spacing={0} className='advantageGrid' id='advantage'>
         <div className='advantageH2'>
           <h2>Преимущества</h2>
         </div>
