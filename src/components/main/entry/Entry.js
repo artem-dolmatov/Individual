@@ -29,7 +29,7 @@ class Entry extends Component {
   handleSubmit(event){
     event.preventDefault()
 
-    fetch('http://151.248.118.213:3001/FormEntry', {
+    fetch('http://88.212.253.194:3011/FormEntry', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -55,11 +55,8 @@ class Entry extends Component {
   }
   render() {
     return (
-        <Grid container spacing={0} className='entryBg' id='entry'>          
-          <Grid item sm={8} xs={12}>
-            <div className='entryH2'>
-              <h2 className='entryH2Text'>Стоимость обучения составляет - 30 000 рублей</h2>
-            </div>
+        <Grid container spacing={0} className='entryBg' id='entry'>
+          <Grid item xs={12}>
             <div className='entryForm'>
               <p className='entryFormName'>Запишись на обучение</p>
               <form className='entryFormMargin' onSubmit={this.handleSubmit}>
@@ -99,11 +96,6 @@ class Entry extends Component {
                   />
                 </div>
               </form>
-            </div>
-          </Grid>
-          <Grid item sm={4} xs={12}>
-            <div className='entryVK'>
-              <div id="vk_groups"></div>
             </div>
           </Grid>
         </Grid>

@@ -13,3 +13,6 @@ a {
 body {
   margin: 0;
 }
+input:invalid{
+  box-shadow:none;
+}

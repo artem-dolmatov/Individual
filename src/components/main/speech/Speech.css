@@ -1,5 +1,8 @@
+.speech-container {
+  box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,.4);
+}
 .speechBlock {
-  padding: 5% 5% 3% 3%;
+  padding: 5% 5% 3% 3%;  
 }
 .speechImg {
   width: 150px;

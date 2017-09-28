@@ -1,0 +1,105 @@
+.types-container {
+  box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,.4);
+}
+.types-h2 {
+  text-align: center;
+  width: 100%;
+}
+.header-form {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 10px rgba(0,0,0,.4);
+  margin: 10% 6% 10% 6%;
+}
+.header-body {
+  position: relative;
+  padding: 1.25rem;
+}
+.header-form-head {
+  color: #fff;
+  margin-top: -50px;
+  margin-bottom: 3rem;
+  padding: 1% 1% 1% 0%;
+  border-radius: 2px;
+  background-color: #3f51b5;
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+}
+.header-form-request {
+  text-align: center;
+  font-size: 20px;
+}
+.ul-types {
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+.theory-p-types {
+  margin-top: -30px;
+  text-align: center;
+}
+.practice-p-types {
+  text-align: center;
+}
+.types-price {
+  text-align: center;
+}
+.button-types {
+  text-align: center;
+}
+.types-btn {
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  user-select: none;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  padding: 11px 16px;
+  display: inline-flex;
+  font-size: 14px;
+  min-width: 88px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  min-height: 36px;
+  box-sizing: border-box;
+  align-items: center;
+  line-height: 1em;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  border-radius: 2px;
+  text-transform: uppercase;
+  justify-content: center;
+  color: rgba(255, 255, 255, 1);
+  background-color: #3f51b5;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+.types-btn:hover {
+  background-color: #303f9f;
+}
+.types-btn:active {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+.types-dialog {
+  max-width: 500px;
+}
+.dialog-title {
+  text-align: center;
+}
+.form-types {
+  margin: 0% 5% 3% 5%;
+  max-width: 500px;
+}
+.types-input {
+  width: 100%;
+}
+.types-input-phone {
+  width: 100%;
+  border: 0;
+  font-size: 16px;
+  font-family: 'Roboto';
+  border-bottom: 1px solid #949494;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  outline:none;
+}
+.types-submit {
+  text-align: center;
+}

@@ -8,16 +8,16 @@ import Header from './header/Header';
 import Footer from './footer/Footer';
 import Speech from './speech/Speech';
 import Reviews from './reviews/Reviews';
-import Advantage from './advantage/Advantage';
 import Entry from './entry/Entry';
 import Addresses from './addresses/Addresses';
+import Types from './types/Types';
 
 class Main extends Component {
   render() {
     return(
       <Grid container spacing={0}>
         <Header />
-        <Advantage />
+        <Types />
         <Reviews />
         <Speech />
         <Entry />
