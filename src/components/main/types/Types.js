@@ -37,7 +37,7 @@ class Types extends Component {
   handleSubmit(event){
     event.preventDefault()
 
-    fetch('http://localhost:3011/Types', {
+    fetch('http://88.212.253.194:3011/Types', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
